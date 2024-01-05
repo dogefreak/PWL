@@ -25,7 +25,7 @@ void loop() {
   if(HC12.available()){
     String input = HC12.readString();
     Serial.println(HC12.readString());
-    delay(1000);
+    // delay(1000);
     if (input == "SIEBEN") {
       turnOnRelay();
     } 
